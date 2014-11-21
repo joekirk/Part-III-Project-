@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD0E327B16B96E1B002398C7 /* writeaxsffile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD0E327916B96E1A002398C7 /* writeaxsffile.cpp */; };
 		FD14004016A8A01D004688CB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14003F16A8A01D004688CB /* main.cpp */; };
 		FD14004216A8A01D004688CB /* Part_III_Project___version1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD14004116A8A01D004688CB /* Part_III_Project___version1.1 */; };
+		FD14004A16A8A037004688CB /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14004816A8A037004688CB /* core.cpp */; };
+		FD14004D16A8A06F004688CB /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14004B16A8A06F004688CB /* input.cpp */; };
+		FD14005616A8A598004688CB /* structuralanalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14005416A8A598004688CB /* structuralanalysis.cpp */; };
+		FDA687A716D3DC520068F672 /* fftw3.f in Sources */ = {isa = PBXBuildFile; fileRef = FDA6879316D3DC520068F672 /* fftw3.f */; };
+		FDA687A816D3DC520068F672 /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA6879916D3DC520068F672 /* libfftw3.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +31,35 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD0E327916B96E1A002398C7 /* writeaxsffile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = writeaxsffile.cpp; sourceTree = "<group>"; };
+		FD0E327A16B96E1B002398C7 /* writeaxsffile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writeaxsffile.h; sourceTree = "<group>"; };
 		FD14003B16A8A01D004688CB /* Part III Project - version1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Part III Project - version1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD14003F16A8A01D004688CB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FD14004116A8A01D004688CB /* Part_III_Project___version1.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "Part_III_Project___version1.1"; sourceTree = "<group>"; };
+		FD14004816A8A037004688CB /* core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = core.cpp; sourceTree = "<group>"; };
+		FD14004916A8A037004688CB /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		FD14004B16A8A06F004688CB /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
+		FD14004C16A8A06F004688CB /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
+		FD14005416A8A598004688CB /* structuralanalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = structuralanalysis.cpp; sourceTree = "<group>"; };
+		FD14005516A8A598004688CB /* structuralanalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = structuralanalysis.h; sourceTree = "<group>"; };
+		FD14005716A8B06F004688CB /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix.h; path = ../Matrix.h; sourceTree = "<group>"; };
+		FD14005816A8B06F004688CB /* MatrixI:O.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MatrixI:O.h"; path = "../MatrixI:O.h"; sourceTree = "<group>"; };
+		FDA6879016D3DC520068F672 /* fftw-wisdom */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "fftw-wisdom"; sourceTree = "<group>"; };
+		FDA6879116D3DC520068F672 /* fftw-wisdom-to-conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "fftw-wisdom-to-conf"; sourceTree = "<group>"; };
+		FDA6879316D3DC520068F672 /* fftw3.f */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.fortran; path = fftw3.f; sourceTree = "<group>"; };
+		FDA6879416D3DC520068F672 /* fftw3.f03 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fftw3.f03; sourceTree = "<group>"; };
+		FDA6879516D3DC520068F672 /* fftw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fftw3.h; sourceTree = "<group>"; };
+		FDA6879616D3DC520068F672 /* fftw3l.f03 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fftw3l.f03; sourceTree = "<group>"; };
+		FDA6879716D3DC520068F672 /* fftw3q.f03 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fftw3q.f03; sourceTree = "<group>"; };
+		FDA6879916D3DC520068F672 /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3.a; sourceTree = "<group>"; };
+		FDA6879A16D3DC520068F672 /* libfftw3.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libfftw3.la; sourceTree = "<group>"; };
+		FDA6879C16D3DC520068F672 /* fftw3.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fftw3.pc; sourceTree = "<group>"; };
+		FDA6879F16D3DC520068F672 /* dir */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dir; sourceTree = "<group>"; };
+		FDA687A016D3DC520068F672 /* fftw3.info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fftw3.info; sourceTree = "<group>"; };
+		FDA687A116D3DC520068F672 /* fftw3.info-1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fftw3.info-1"; sourceTree = "<group>"; };
+		FDA687A216D3DC520068F672 /* fftw3.info-2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fftw3.info-2"; sourceTree = "<group>"; };
+		FDA687A516D3DC520068F672 /* fftw-wisdom-to-conf.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "fftw-wisdom-to-conf.1"; sourceTree = "<group>"; };
+		FDA687A616D3DC520068F672 /* fftw-wisdom.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "fftw-wisdom.1"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA687A816D3DC520068F672 /* libfftw3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +77,7 @@
 		FD14003016A8A01D004688CB = {
 			isa = PBXGroup;
 			children = (
+				FDA6878E16D3DC520068F672 /* fftw-3.3.3 */,
 				FD14003E16A8A01D004688CB /* Part III Project - version1 */,
 				FD14003C16A8A01D004688CB /* Products */,
 			);
@@ -61,9 +95,106 @@
 			isa = PBXGroup;
 			children = (
 				FD14003F16A8A01D004688CB /* main.cpp */,
+				FD14004816A8A037004688CB /* core.cpp */,
+				FD14004916A8A037004688CB /* core.h */,
+				FD14004B16A8A06F004688CB /* input.cpp */,
+				FD14004C16A8A06F004688CB /* input.h */,
+				FD14005416A8A598004688CB /* structuralanalysis.cpp */,
+				FD14005516A8A598004688CB /* structuralanalysis.h */,
+				FD0E327916B96E1A002398C7 /* writeaxsffile.cpp */,
+				FD0E327A16B96E1B002398C7 /* writeaxsffile.h */,
+				FD14005716A8B06F004688CB /* Matrix.h */,
+				FD14005816A8B06F004688CB /* MatrixI:O.h */,
 				FD14004116A8A01D004688CB /* Part_III_Project___version1.1 */,
 			);
 			path = "Part III Project - version1";
+			sourceTree = "<group>";
+		};
+		FDA6878E16D3DC520068F672 /* fftw-3.3.3 */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6878F16D3DC520068F672 /* bin */,
+				FDA6879216D3DC520068F672 /* include */,
+				FDA6879816D3DC520068F672 /* lib */,
+				FDA6879D16D3DC520068F672 /* share */,
+			);
+			path = "fftw-3.3.3";
+			sourceTree = "<group>";
+		};
+		FDA6878F16D3DC520068F672 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6879016D3DC520068F672 /* fftw-wisdom */,
+				FDA6879116D3DC520068F672 /* fftw-wisdom-to-conf */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		FDA6879216D3DC520068F672 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6879316D3DC520068F672 /* fftw3.f */,
+				FDA6879416D3DC520068F672 /* fftw3.f03 */,
+				FDA6879516D3DC520068F672 /* fftw3.h */,
+				FDA6879616D3DC520068F672 /* fftw3l.f03 */,
+				FDA6879716D3DC520068F672 /* fftw3q.f03 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FDA6879816D3DC520068F672 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6879916D3DC520068F672 /* libfftw3.a */,
+				FDA6879A16D3DC520068F672 /* libfftw3.la */,
+				FDA6879B16D3DC520068F672 /* pkgconfig */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		FDA6879B16D3DC520068F672 /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6879C16D3DC520068F672 /* fftw3.pc */,
+			);
+			path = pkgconfig;
+			sourceTree = "<group>";
+		};
+		FDA6879D16D3DC520068F672 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6879E16D3DC520068F672 /* info */,
+				FDA687A316D3DC520068F672 /* man */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		FDA6879E16D3DC520068F672 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6879F16D3DC520068F672 /* dir */,
+				FDA687A016D3DC520068F672 /* fftw3.info */,
+				FDA687A116D3DC520068F672 /* fftw3.info-1 */,
+				FDA687A216D3DC520068F672 /* fftw3.info-2 */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		FDA687A316D3DC520068F672 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				FDA687A416D3DC520068F672 /* man1 */,
+			);
+			path = man;
+			sourceTree = "<group>";
+		};
+		FDA687A416D3DC520068F672 /* man1 */ = {
+			isa = PBXGroup;
+			children = (
+				FDA687A516D3DC520068F672 /* fftw-wisdom-to-conf.1 */,
+				FDA687A616D3DC520068F672 /* fftw-wisdom.1 */,
+			);
+			path = man1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD14004016A8A01D004688CB /* main.cpp in Sources */,
+				FD14004A16A8A037004688CB /* core.cpp in Sources */,
+				FD14004D16A8A06F004688CB /* input.cpp in Sources */,
+				FD14005616A8A598004688CB /* structuralanalysis.cpp in Sources */,
+				FD0E327B16B96E1B002398C7 /* writeaxsffile.cpp in Sources */,
+				FDA687A716D3DC520068F672 /* fftw3.f in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +312,10 @@
 		FD14004616A8A01D004688CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/fftw-3.3.3/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -183,6 +323,10 @@
 		FD14004716A8A01D004688CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/fftw-3.3.3/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -206,6 +350,7 @@
 				FD14004716A8A01D004688CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
